@@ -1,4 +1,5 @@
 
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -16,5 +17,9 @@ namespace Models {
 
 
         public Kuvar Kuvar { get; set; }
+
+        public static implicit operator Sastojak(ReceptSastojak v) {
+            throw new NotImplementedException();
+        }
     }
 }

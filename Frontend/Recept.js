@@ -264,7 +264,6 @@ export class Recept {
             koraci: JSON.stringify(kor)
         }).replace(/\\/g, '').replace(/\"\[/g, '[').replace(/\]\"/g, ']');
 
-        console.log(body);
 
         fetch(this.fetchBegin + "Recept/Update", {
             method: "POST",
@@ -319,7 +318,6 @@ export class Recept {
                                         korak.opis = el.opis;
                                         koraci.push(korak);
                                     });
-                                    console.log(koraci);
 
                                     let divDodavanje = document.createElement("div");
                                     divDodavanje.className = "DodavanjeDiv";
